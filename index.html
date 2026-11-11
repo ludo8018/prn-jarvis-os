@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020910">
+  <script>try{if(!sessionStorage.getItem("prnIntroSeen")||/[?&]intro=1/.test(location.search))document.documentElement.classList.add("intro-lock")}catch(e){}</script>
+
+  <title>Pratik Ranjan Nayak | JARVIS OS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="intro.css">
+</head>
+
+<!-- NOTIFICATION -->
+<div class="toast" id="toast"
+    role="status" aria-live="polite">
+</div>
+
+<!-- FLOATING HUD TEXT -->
+<div id="hudTooltip"></div>
+
+<body>
+
+  <!-- Background artwork -->
+  <div class="wallpaper" aria-hidden="true"></div>
+  <div class="wallpaper-shade" aria-hidden="true"></div>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+
+  
+<header class="topbar">
+
+    <!-- PRN LOGO -->
+    <a href="#" class="brand" id="homeBrand">
+        PRN
+    </a>
+
+    <!-- MOBILE MENU -->
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false">
+        ☰
+    </button>
+
+    <!-- NAVIGATION FRAME -->
+    <nav class="nav" id="nav">
+
+        <button class="nav-link active" data-panel="home">
+            <span class="nav-icon">⌂</span>
+            HOME
+        </button>
+
+        <button class="nav-link" data-panel="about">
+            ABOUT
+        </button>
+
+        <button class="nav-link" data-panel="skills">
+            SKILLS
+        </button>
+
+        <button class="nav-link" data-panel="projects">
+            PROJECTS
+        </button>
+
+        <button class="nav-link" data-panel="experience">
+            EXPERIENCE
+        </button>
+
+        <button class="nav-link" data-panel="contact">
+            CONTACT
+        </button>
+
+    </nav>
+
+    <!-- JARVIS MODE -->
+    <button class="jarvis-toggle"
+            id="jarvisToggle"
+            aria-pressed="true">
+
+        <span class="target">◎</span>
+
+        <span class="jarvis-text">JARVIS MODE</span>
+
+        <i class="switch">
+            <b></b>
+        </i>
+
+    </button>
+
+</header>
+
+
+
+  <!-- HOME SCREEN -->
+  <main class="home-screen" id="homeScreen">
+
+    <div class="home-copy">
+
+      <div class="eyebrow">
+        <i></i> HELLO, I'M
+      </div>
+
+      <h1>
+        PRATIK RANJAN<br>
+        <em>NAYAK</em>
+      </h1>
+
+      <div class="role-label">
+        FULL STACK DEVELOPER
+      </div>
+
+      <p>
+        Passionate about building real-world applications
+        with Java, web technologies and modern tools.
+        Always learning, always creating.
+      </p>
+
+      <div class="home-actions">
+
+        <button class="action-button primary"
+          data-open="projects">
+          VIEW MY WORK <span>→</span>
+        </button>
+
+        
+       <a class="action-button secondary"
+        href="Pratik_Ranjan_Nayak_Resume.pdf"
+        download="Pratik_Ranjan_Nayak_Resume.pdf">
+
+        DOWNLOAD RESUME <span>⇩</span>
+
+      </a>
+
+
+      </div>
+
+
+      <!-- TECHNOLOGY PANEL -->
+      <div class="tech-strip">
+
+        <div class="tech-title">
+          <span>+</span> TECH STACK <i></i>
+        </div>
+
+        <div class="tech-items">
+
+          <div>
+            <b class="java">♨</b>
+            <small>Java</small>
+          </div>
+
+          <div>
+            <b class="python">Py</b>
+            <small>Python</small>
+          </div>
+
+          <div>
+            <b class="html">🌐</b>
+            <small>HTML</small>
+          </div>
+
+          <div>
+            <b class="css">#️⃣</b>
+            <small>CSS</small>
+          </div>
+
+          <div>
+            <b class="js">JS</b>
+            <small>JavaScript</small>
+          </div>
+
+          <div>
+            <b class="mysql">⛃</b>
+            <small>MySQL</small>
+          </div>
+
+          <div>
+            <b class="postgres">PG</b>
+            <small>PostgreSQL</small>
+          </div>
+
+          <div>
+            <b class="spring">🍃</b>
+            <small>Spring Boot</small>
+          </div>
+
+        </div>
+
+        <div class="django-note">
+          PYTHON WEB FRAMEWORK:
+          <strong>DJANGO</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT SIDE INFORMATION -->
+    <aside class="quick-data">
+
+      <div class="quick-item">
+        <span>&lt;/&gt;</span>
+        <div>
+          <b>DSA</b>
+          <small>PROBLEM SOLVING</small>
+        </div>
+      </div>
+
+      <div class="quick-item">
+        <span>▰</span>
+        <div>
+          <b>PROJECTS</b>
+          <small>HANDS-ON BUILDS</small>
+        </div>
+      </div>
+
+      <div class="quick-item">
+        <span>◆</span>
+        <div>
+          <b>B.TECH</b>
+          <small>CSE (IoT)</small>
+        </div>
+      </div>
+
+      <div class="quick-item">
+        <span>⌖</span>
+        <div>
+          <b>BBSR</b>
+          <small>ODISHA, INDIA</small>
+        </div>
+      </div>
+
+    </aside>
+
+
+    <!-- FOOTER -->
+    <div class="bottom-line">
+      <i></i>
+      BUILD <b>•</b>
+      LEARN <b>•</b>
+      IMPROVE <b>•</b>
+      REPEAT
+    </div>
+
+    <div class="system-status">
+      <span class="live-dot"></span>
+      SYSTEM ONLINE <b>v1.0</b>
+    </div>
+
+  </main>
+
+
+  <!-- REUSABLE JARVIS INFORMATION WINDOW -->
+  <div class="panel-backdrop" id="panelBackdrop"
+    aria-hidden="true">
+
+    <section class="system-panel"
+      id="systemPanel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="panelTitle"
+      tabindex="-1">
+
+      <div class="panel-top">
+
+        <div class="panel-system">
+          <span class="live-dot"></span>
+          PRN // PERSONAL DATABASE
+          <small id="panelCode">HOME</small>
+        </div>
+
+        <button class="close-panel"
+          id="closePanel"
+          aria-label="Close panel">
+          ×
+        </button>
+
+      </div>
+
+      <div class="panel-content" id="panelContent">
+      </div>
+
+      <div class="panel-bottom">
+        <span>SECURE INTERFACE</span>
+        <span>JARVIS OS <b>●</b> ONLINE</span>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- NOTIFICATION -->
+  <div class="toast" id="toast"
+    role="status" aria-live="polite">
+  </div>
+  
+  <!-- FLOATING HUD TEXT -->
+  <div id="hudTooltip"></div>
+
+
+  <!-- CINEMATIC INTRO -->
+  <div class="intro" id="intro" role="dialog" aria-label="Portfolio intro">
+    <div class="in-bg"></div><div class="in-grid"></div><div class="in-vig"></div>
+    <button class="in-skip" id="introSkip">SKIP &#9656;&#9656;</button>
+
+    <div class="in-gate">
+      <button class="in-start" id="introStart" aria-label="Initialize PRN Jarvis OS">INITIALIZE</button>
+      <p>CLICK TO BOOT PRN JARVIS OS &middot; SOUND ON</p>
+    </div>
+
+    <div class="in-stage">
+      <div class="in-core"><i></i><i></i><i></i><b></b></div>
+
+      <section class="sc" data-s="online"><div>
+        <svg class="ring-ok" viewBox="0 0 90 90"><circle cx="45" cy="45" r="38"/><path d="M27 46l12 12 25-27"/></svg>
+        <h2>SYSTEM ONLINE</h2>
+        <svg class="pulse" viewBox="0 0 340 36"><path d="M0 18h110l10-14 14 30 12-26 10 10h184"/></svg>
+      </div></section>
+
+      <section class="sc" data-s="welcome"><div>
+        <small>/// WELCOME TO</small>
+        <h2><em>PRN</em> JARVIS OS</h2>
+        <small>PERSONAL PORTFOLIO INTERFACE</small>
+      </div></section>
+
+      <section class="sc" data-s="name"><div class="row">
+        <span class="portrait"></span>
+        <span><small>I'M ///</small><h2>PRATIK<br>RANJAN NAYAK</h2></span>
+      </div></section>
+
+      <section class="sc" data-s="role"><div class="row">
+        <span class="cup">&#9832;</span>
+        <span><small>A</small><h2><em>FULL STACK</em></h2><small class="spread">DEVELOPER</small><span class="chip">&lt;/&gt;</span></span>
+      </div></section>
+
+      <section class="sc" data-s="explore"><div>
+        <small>EXPLORE MY</small>
+        <div class="tiles"><div><b>&#9636;</b>PROJECTS</div><div><b>&#9647;&#9647;</b>SKILLS</div><div><b>&#9873;</b>DEVELOPMENT JOURNEY</div></div>
+        <span class="go">LET'S BEGIN! &raquo;</span>
+      </div></section>
+
+      <div class="in-ped"><i></i><i></i><i></i></div>
+    </div>
+
+    <div class="in-wave" id="introWave" aria-hidden="true"></div>
+    <div class="in-cap" id="introCap" aria-live="polite"></div>
+    <div class="in-bar"><i id="introBar"></i></div>
+  </div>
+
+  <!-- EMAILJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+<script src="intro.js"></script>
+</body>
+</html>

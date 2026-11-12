@@ -266,7 +266,7 @@ const panelTemplates = {
             </article>
 
             <article class="timeline-entry">
-                <small>2022 — PRESENT</small>
+                <small>2022 — 2026</small>
                 <h3>B.TECH · COMPUTER SCIENCE & ENGINEERING (IoT)</h3>
                 <p>
                     GITA Autonomous College,
